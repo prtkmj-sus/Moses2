@@ -7,7 +7,8 @@ const Hero: React.FC = () => {
       
       {/* Video Background */}
       <div className="absolute inset-0 z-0 select-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/40 via-navy-900/20 to-navy-950/90 z-10"></div>
+        {/* Darkened gradient for better contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-900/60 to-navy-950/95 z-10"></div>
         {/* Using a high-quality aesthetic dental/lifestyle video */}
         <video 
             autoPlay 
@@ -35,7 +36,7 @@ const Hero: React.FC = () => {
 
             <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
               Moses Lake <br />
-              <span className="italic font-light text-slate-300">Dentistry</span>
+              <span className="italic font-light text-brand-red">Dentistry</span>
             </h1>
 
             <p className="font-sans text-slate-300 text-lg md:text-xl font-light leading-relaxed max-w-xl mb-12 border-l border-brand-red pl-6">
